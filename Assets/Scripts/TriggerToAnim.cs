@@ -37,7 +37,7 @@ public class TriggerToAnim : MonoBehaviour {
 		{
 			isOccupied = true; 
 		}
-		else
+		else if(!InMask(collider))
 		{
 			isOccupied = false; 
 		}

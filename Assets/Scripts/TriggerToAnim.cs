@@ -8,11 +8,11 @@ public class TriggerToAnim : MonoBehaviour {
 	public string enterTriggerName = "Enter";
 	public string exitTriggerName = "Exit";
 	public string occupiedBoolName = "Occupied";
-	private bool isOccupied = false;
+	//private bool isOccupied = false;
 
 
 	public void FixedUpdate() {
-		animator.SetBool(occupiedBoolName, isOccupied);
+		//animator.SetBool(occupiedBoolName, isOccupied);
 	}
 
 	private bool InMask(Collider collider) {
@@ -35,11 +35,11 @@ public class TriggerToAnim : MonoBehaviour {
 
 		if (InMask(collider))
 		{
-			isOccupied = true; 
+			//isOccupied = true; 
 		}
 		else if(!InMask(collider))
 		{
-			isOccupied = false; 
+			//isOccupied = false; 
 		}
 	}
 
